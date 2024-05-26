@@ -1,12 +1,11 @@
 # Utilisez l'image de base Node.js pour construire l'application
-FROM node:14 as build
+FROM node:16 as build
 
 # Créez un répertoire de travail pour l'application
 WORKDIR /app
 
 # Copiez les fichiers de package.json et package-lock.json (ou yarn.lock)
 COPY package*.json ./
-COPY prisma ./prisma/
 # Installez les dépendances
 RUN npm install
 
@@ -34,6 +33,7 @@ WORKDIR /app
 
 # Copiez les fichiers de package.json et package-lock.json (ou yarn.lock)
 COPY package*.json ./
+COPY prisma ./prisma/
 
 # Installez uniquement les dépendances de production
 RUN npm install --only=production
