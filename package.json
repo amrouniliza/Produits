@@ -25,6 +25,7 @@
     "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^10.0.0",
     "@prisma/client": "^5.14.0",
+    "jest-mock-extended": "^3.0.7",
     "prisma": "^5.14.0",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1"
@@ -67,9 +68,13 @@
       "**/*.(t|j)s"
     ],
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
-  },
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "^src/(.*)$": "<rootDir>/$1"
+    }
+    
+},
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
   }
-}
+  }
