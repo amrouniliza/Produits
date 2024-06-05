@@ -46,6 +46,13 @@ export class ProductsController {
     console.log('id', id);
     console.log('id', id);
     console.log('id', id);
+    console.log('id', id);
+    console.log('id', id);
+    console.log('id', id);
+    console.log('id', id);
+    console.log('id', id);
+    console.log('id', id);
+    console.log('id', id);
     return this.productsService.remove(+id);
   }
 }
