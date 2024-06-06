@@ -3,10 +3,13 @@ import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
+  constructor(private readonly appService: AppService) { }
 
   @Get()
   getHello(): string {
+    if (true) {
+      console.log('Hello');
+    }
     return this.appService.getHello();
   }
 }
