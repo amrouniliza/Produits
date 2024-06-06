@@ -28,24 +28,6 @@ export class ProductsController {
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    if (!id) {
-      console.log('No id provided')
-    }
-    if (!id) {
-      console.log('No id provided')
-    }
-    if (!id) {
-      console.log('No id provided')
-    }
-    if (!id) {
-      console.log('No id provided')
-    }
-    if (!id) {
-      console.log('No id provided')
-    }
-    if (!id) {
-      console.log('No id provided')
-    }
     return this.productsService.remove(+id);
   }
 }
