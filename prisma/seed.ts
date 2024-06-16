@@ -36,9 +36,6 @@ async function main() {
 
     products.push(product);
   }
-
-  const result = await Promise.all(products);
-  console.log(result);
 }
 
 main()
