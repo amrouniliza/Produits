@@ -1,6 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { ProductsService } from './products.service';
-
 import { Prisma, Product } from '@prisma/client';
 import { NotFoundException } from '@nestjs/common';
 import { DatabaseService } from 'src/database/database.service';
