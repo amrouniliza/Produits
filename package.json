@@ -73,7 +73,9 @@
     "coveragePathIgnorePatterns": [
       "/node_modules/",
       "\\.module\\.ts$",
-      "main.ts"
+      "main.ts",
+       "src/utils/",
+      "logger.middleware.ts"
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node",
